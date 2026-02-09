@@ -1,4 +1,3 @@
-
 <?php
 $conn = mysqli_connect("localhost", "root", "", "neerajadb");
 
@@ -14,7 +13,7 @@ $sql = "SELECT * FROM user_details WHERE username='$username' AND password='$pas
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
-    echo "<h2 style='color:green; text-align:center;'>Login Succesful </h2>";
+    echo "<h2 style='color:green; text-align:center;'>Login Successful </h2>";
 } else {
     echo "<h2 style='color:red; text-align:center;'>Invalid Username or Password </h2>";
 }
