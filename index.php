@@ -1,0 +1,188 @@
+
+<html>  
+<head>  
+    <title>StyleWear - Clothing Brand</title>  
+    <link rel="stylesheet" href="style.css">  <style>  
+    .gallery img {  
+        width: 200px;  
+        height: 250px;  
+        margin: 20px;  
+        border: 2px solid black;  
+        border-radius: 10px;  
+    }  
+
+    .item {  
+        display: inline-block;  
+        text-align: center;  
+    }  
+    .info{
+        background:lightgrey;
+        padding:15px;
+        margin:20px;
+
+    }
+   
+</style>
+
+</head>  <body>  <div class="top">  
+    <h1>Vastrika</h1>  
+    <p>ladies wear</p>  
+</div>  <div class="menu">  
+    <a href="index.html">Home</a>  
+    <a href="ladies.html">Sarees</a>  
+    <a href="Women.html">Kurtas</a>  
+    <a href="Kids.html">Kids</a>  
+    <a href="contact_form.html">Contact</a>  
+    <a href="login.html">Login</a> 
+    <a href="register.html">Register</a>
+</div> 
+<div class="info">
+    <h2>Store Information</h2>
+
+    <p>Store Name: <span id="storeName"></span></p>
+    <p>Total Products Viewed: <span id="productCount"></span></p>
+    <p>Discount: <span id="discount"></span>%</p>
+
+    <button onclick="increaseCount()">View Product</button>
+    <button onclick="applyDiscount()">Apply Discount</button>
+    <h2>User Interaction</h2>
+
+<p>Name: <span id="userName">Not entered</span></p>
+<p id="msg">Waiting...</p>
+
+<button id="nameBtn">Enter Name</button>
+<button id="orderBtn">Confirm Order</button>
+
+<br><br>
+    <h2>Upload Product / Document</h2>
+
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="myfile" required>
+        <br><br>
+        <button type="submit">Upload File</button>
+    </form>
+
+    <?php
+    if (isset($_GET['file'])) {
+        $file = $_GET['file'];
+        echo "<p style='color:green;'>File uploaded successfully!</p>";
+        echo "<a href='download.php?file=$file'>
+                <button>Download Uploaded File</button>
+              </a>";
+    }
+    ?>
+</div>
+
+<h2>Kurthas</h2>  
+<div class="gallery">  
+    <div class="item">  
+        <a href="shopnow.html">  
+            <img src="women1.jpg">  
+        </a>  
+        <p>₹499</p>  
+    </div>  <div class="item">  
+    <a href="shopnow.html">  
+        <img src="women2.jpg">  
+    </a>  
+    <p>₹399</p>  
+</div>  
+
+<div class="item">  
+    <a href="shopnow.html">  
+        <img src="women3.jpg">  
+    </a>  
+    <p>₹1499</p>  
+</div>  
+
+<div class="item">  
+    <a href="shopnow.html">  
+        <img src="women4.jpg">  
+    </a>  
+    <p>₹999</p>  
+</div>
+
+</div>  <h2>Sarees</h2>  
+<div class="gallery">  
+    <div class="item">  
+        <a href="shopnow.html">  
+            <img src="saree1.jpg">  
+        </a>  
+        <p>₹2499</p>  
+    </div>  <div class="item">  
+    <a href="shopnow.html">  
+        <img src="saree2.jpg">  
+    </a>  
+    <p>₹2199</p>  
+</div>  
+
+<div class="item">  
+    <a href="shopnow.html">  
+        <img src="saree3.jpg">  
+    </a>  
+    <p>₹1999</p>  
+</div>  
+
+<div class="item">  
+    <a href="shopnow.html">  
+        <img src="saree4.jpg">  
+    </a>  
+    <p>₹2799</p>  
+</div>
+
+</div>  <h2>Kids</h2>  
+<div class="gallery">  
+    <div class="item">  
+        <a href="shopnow.html">  
+            <img src="kids1.jpg">  
+        </a>  
+        <p>₹799</p>  
+    </div>  <div class="item">  
+    <a href="shopnow.html">  
+        <img src="kids5.jpg">  
+    </a>  
+    <p>₹699</p>  
+</div>  
+
+<div class="item">  
+    <a href="shopnow.html">  
+        <img src="kids3.jpg">  
+    </a>  
+    <p>₹899</p>  
+</div>  
+
+<div class="item">  
+    <a href="shopnow.html">  
+        <img src="kids4.jpg">  
+    </a>  
+    <p>₹749</p>  
+</div>  
+<h2>Frocks</h2>  
+<div class="gallery">  
+  <div class="item">  
+    <a href="shopnow.html">  
+        <img src="frock-1.jpg">  
+    </a>  
+    <p>₹799</p>  
+</div>  
+  <div class="item">  
+    <a href="shopnow.html">  
+        <img src="frock-2.jpg">  
+    </a>  
+    <p>₹699</p>  
+</div>  
+  <div class="item">  
+    <a href="shopnow.html">  
+        <img src="frock-3.jpg">  
+    </a>  
+    <p>₹799</p>  
+</div>  
+  <div class="item">  
+    <a href="shopnow.html">  
+        <img src="frock-4.jpg">  
+    </a>  
+    <p>₹899</p>
+
+</div>
+ </body> 
+ <script src="script.js" ></script>
+</html>  

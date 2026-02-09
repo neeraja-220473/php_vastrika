@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial;
+    background-image: url("cloth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top {
+    
+    color: black;
+    text-align: center;
+
+}
+
+.menu {
+    
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+
